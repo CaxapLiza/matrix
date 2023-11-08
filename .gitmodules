@@ -1,0 +1,6 @@
+[submodule "submodule"]
+    path = submodule
+    url = https://github.com/CaxapLiza/matrix-submodule.git
+[submodule "new-submodule"]
+	path = new-submodule
+	url = https://github.com/CaxapLiza/ToDoList

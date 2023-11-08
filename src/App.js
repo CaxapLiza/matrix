@@ -1,5 +1,10 @@
 import {Route, Routes} from "react-router";
 import MainLayout from "./layouts/MainLayout";
+import TextEditor from "./pages/textEditor/TextEditor";
+import MatrixLayout from "./layouts/MatrixLayout";
+import MatrixRank from "./pages/matrix/MatrixRank";
+import MatrixSubtraction from "./pages/matrix/MatrixSubtraction";
+import MatrixMean from "./pages/matrix/MatrixMean";
 
 function App() {
   return (
@@ -8,9 +13,9 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route path="texteditor" element={<TextEditor />}/>
           <Route path="matrix" element={<MatrixLayout />}>
-            <Route path="average" component={<Average />} />
-            <Route path="rang" component={<Rang />} />
-            <Route path="subtraction" component={<Subtraction />} />
+            <Route path="mean" element={<MatrixMean />} />
+            <Route path="rank" element={<MatrixRank />} />
+            <Route path="subtraction" element={<MatrixSubtraction />} />
           </Route>
         </Route>
       </Routes>
